@@ -1,4 +1,3 @@
-const {token} = require("./config.js");
 const { Client, GatewayIntentBits } = require("discord.js");
 const Verify = require('./bot-verify');
 const { channel_id } = require("./bot-verify");
@@ -56,7 +55,7 @@ client.on("messageCreate", async (msg) => {
 }
 });
 
-client.login(token);
+client.login(process.env.TOKEN);
 console.log("login");
 
 // const ROLE_Verified_ID = "1014798401486987274"
