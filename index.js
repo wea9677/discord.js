@@ -4,6 +4,7 @@ const bodyParser = require("body-parser");
 const { port } = require('./config.js');
 const Caver = require("caver-js");
 const Users = require("./models/users");
+const cors = require('cors');
 require("dotenv").config();
 const {add_verified_role} = require("./bot");
 
@@ -22,6 +23,7 @@ mongoose.connect("mongodb+srv://wea9677:tmxkdlfl@cluster0.xmzro.mongodb.net/test
 });
 
 
+
 const CONTRACT_ADDR = "0x9e481eb17d3c3c07d7a6ab571b4ba8ef432b5cf2"
 let contract = null;
 async function initContract(){
@@ -32,6 +34,12 @@ async function initContract(){
 initContract();
 
 const app = express();
+
+app.use(cors({ // CORS 모듈 실행
+  origin : "*", 
+ // origin : "*", // 출처 허용 옵션 (전부 허용)
+  credential: 'true' // 사용자 인증이 필요한 리소스(쿠키 ..등) 접근
+}));
 
 app.use(bodyParser.json());
 
