@@ -96,8 +96,8 @@ const ROLE_Verified_ID = process.env.ROLE_Verified_ID;
 async function add_verified_role(user_id) {
   console.log("add_verified_role", user_id);
 
-  const guild = client.guilds.cache.get(GUILD_ID);
-  const role = guild.roles.cache.get(ROLE_Verified_ID);
+  const guild = client.guilds.cache.get(process.env.GUILD_ID);
+  const role = guild.roles.cache.get(process.env.ROLE_VERIFIED_ID);
   const member = await guild.members.fetch(user_id);
   member.roles.add(role);
 }
