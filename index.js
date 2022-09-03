@@ -83,6 +83,6 @@ app.post("/api_wallet", async (req, res) =>{
     });
 });
 
-app.listen(port, () => 
-  console.log(`App listening at http://localhost:${port}`)
+app.listen(process.env.PORT,() => 
+  console.log(`App listening at http://localhost:${process.env.PORT}`)
 );
