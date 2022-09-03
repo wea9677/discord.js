@@ -22,7 +22,7 @@ async function ready(client) {
  const embed2 = new EmbedBuilder()
  .setTitle(`여기를 눌러 지갑 연동하기`)
  .setDescription(`위에 문구를 눌러서 지갑을 연동하세요`)
- .setURL("https://discord.com/api/oauth2/authorize?client_id=1014421225361133609&redirect_uri=http%3A%2F%2Flocalhost%3A3000&response_type=code&scope=identify");
+ .setURL("https://discord.com/api/oauth2/authorize?client_id=1014421225361133609&redirect_uri=http%3A%2F%2F13.124.77.82&response_type=code&scope=identify");
 
  ch.send({embeds:[embed2]}).then(() => {});
 
