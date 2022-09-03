@@ -1,0 +1,19 @@
+ginamyun8@gmail.com
+
+MTAxNDQyMTIyNTM2MTEzMzYwOQ.GoTj5P.ymRJGROrW8tsen4W-dGdJJKGD-zyS982USvyB4
+
+
+module.exports = {
+    clientId : "1014421225361133609",
+    clientSecret: "cTL8_aYCp5smafvCopLMNCArlWtwEcjm",
+    port: 53134,
+    token: "MTAxNDQyMTIyNTM2MTEzMzYwOQ.GoTj5P.ymRJGROrW8tsen4W-dGdJJKGD-zyS982USvyB4"
+}
+
+09 01
+
+db, 인스턴스, 리눅스 정렬,
+
+해야할 것, 인터넷 창이 뜨자마자 팝업창이 뜰 수 있게 하기
+
+설치가 되지 않았을때 설치 페이지로 가게끔 하기
